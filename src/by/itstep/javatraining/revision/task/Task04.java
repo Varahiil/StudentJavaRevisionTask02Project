@@ -32,6 +32,13 @@ package by.itstep.javatraining.revision.task;
 
 public class Task04 {
     public static boolean task04(int width, int length, int a, int b) {
+//        boolean answer = false;
+//        int maxSide = Math.max(a, b);
+//        int minxSide = Math.min(a, b);
+//        if (width > 0 && length > 0 && a > 0 && b > 0) {
+//            if (width <= minxSide && length <= maxSide || width <= maxSide && length <= minxSide) {
+//                answer = true;
+//            }
         boolean answer = true;
         if (width <= 0 || length <= 0 || a <= 0 || b <= 0) {
             answer = false;
