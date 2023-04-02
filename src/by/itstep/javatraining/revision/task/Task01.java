@@ -26,6 +26,11 @@ package by.itstep.javatraining.revision.task;
 
 public class Task01 {
     public static int task01(int a, int b) {
-        return 0;
+            int max = a;
+            if (max <= b){
+                max = b;
+            }
+//        int max = Math.max(a,b);
+            return max;
     }
 }
