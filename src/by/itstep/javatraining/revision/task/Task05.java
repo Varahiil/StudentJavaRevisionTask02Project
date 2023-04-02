@@ -53,6 +53,13 @@ package by.itstep.javatraining.revision.task;
 
 public class Task05 {
     public static String task05(int a, int b, int n) {
-        return "error";
+        String message = "error";
+        if (a >= 0 && b >= 0 && a + b != 0 && n > 0) {
+            int count = (a * 100 + b) * n;
+            int rubles = count / 100; // вычисляем количество рублей
+            int kopecks = count % 100; // вычисляем количество копеек
+            message = rubles + " " + kopecks;
+        }
+        return message;
     }
 }
