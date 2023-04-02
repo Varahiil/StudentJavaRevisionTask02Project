@@ -25,6 +25,13 @@ package by.itstep.javatraining.revision.task;
 
 public class Task03 {
     public static boolean task03(int width, int length, int side) {
-        return false;
+        boolean answer = true;
+        if (width <= 0 || length <= 0 || side <= 0) {
+            answer = false;
+        }
+        if (side < width || side < length) {
+            answer = false;
+        }
+        return answer;
     }
 }
