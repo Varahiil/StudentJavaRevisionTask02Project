@@ -38,6 +38,19 @@ package by.itstep.javatraining.revision.task;
 
 public class Task07 {
     public static int task07(int number) {
-        return 0;
+        int sum = 0;
+        if (number < 10000 && number != 0 && number > -10000) {
+            sum += number % 10;
+            number /= 10;
+            sum += number % 10;
+            number /= 10;
+            sum += number % 10;
+            number /= 10;
+            sum += number % 10;
+            if (sum < 0) {
+                sum *= (-1);
+            }
+        }
+        return sum;
     }
 }
